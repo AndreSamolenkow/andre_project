@@ -1,0 +1,80 @@
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 3.25rem;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    color: $whitish;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 3;
+}
+
+//header text remove padding
+
+.text_remove_pad {
+    @include smartphone {
+        padding: 0;
+    }
+}
+
+.header-text h1 {
+    &:after {
+        content: '';
+        display: block;
+        background: $whitish;
+        width: 53px;
+        height: 7px;
+        position: absolute;
+        right: 0;
+        margin: 25px 20px 25px;
+        }
+    }
+
+.header-text h2 {
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: $whitish;
+    line-height: 25px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: right;
+    letter-spacing: 2.26px;
+    padding-top: 25px;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    color: $dark-blue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 300;
+    color: $dark_blue;
+    line-height: 30px;
+    letter-spacing: 1.4px;
+    font-size: 1.25rem;
+    margin: 47px 0 0 0;
+    @include tablet {
+        margin: 0;
+        text-align: left;
+    }
+}
+
+p a {
+    @include link;
+}

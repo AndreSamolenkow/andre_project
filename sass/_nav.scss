@@ -1,0 +1,100 @@
+.nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: $dark_blue;
+    width: 100%;
+    height: 200px;
+    z-index: 10;
+
+
+}
+
+.wrapper {
+    margin-top: -200px;
+    position: relative;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapper.open_nav {
+    margin-top: 0;
+    top: 0;
+}
+
+//Menu button
+.ham-menu {
+    position: absolute;
+    z-index: 1100;
+    bottom: -58px;
+    right: 42px;
+    cursor: pointer;
+    @include smartphone {
+        right: 11px;
+    }
+}
+
+
+.ham-menu span {
+    background: $dark_blue;
+    top: 0;
+    position: relative;
+    z-index: 1000px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin-bottom: 8px;
+    transition: all .5s ease-in-out;
+    &:last-child {
+        width: 27px;
+        float: right;
+    }
+}
+
+.ham-menu.open span:nth-child(2) {
+    width: 0;
+    opacity: 0;
+}
+
+.ham-menu.open span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
+
+.ham-menu.open span:nth-child(3) {
+    transform: rotate(45deg);
+    width: 35px;
+    top: -10px;
+}
+
+//Navigation: links
+ul {
+    padding: 0;
+    li a {
+        font-family: 'Open Sans', sans-serif;
+        color: $whitish;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2.26px;
+        display: block;
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+        color: $whitish;
+        width: 100%;
+        margin-bottom: 1rem;
+        transition: all .5s ease-in-out;
+        &:link, &:visited, &:hover {
+            color: darken($whitish, 20%);
+            text-decoration: none;
+        }
+    }
+}
+
+.navigation {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+}

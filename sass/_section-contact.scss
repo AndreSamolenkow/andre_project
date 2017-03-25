@@ -1,0 +1,16 @@
+//CONTACT SECTION
+
+p.contact {
+    @include p_tag(left);
+}
+
+h3.contact {
+    @include heading(right, $right: 0);
+}
+
+h5.email a {
+    margin-top: 37px;
+    text-align: left;
+    @include link;
+
+}

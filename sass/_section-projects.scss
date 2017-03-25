@@ -1,0 +1,76 @@
+//SECTION PROJECTS
+
+//rotating project cirles start here
+
+.circ-container {
+    -webkit-perspective: 700;
+    perspective: 700;
+    padding: 0;
+}
+
+.circ {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 63px 0 0 0;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    &:hover {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+    @include tablet {
+        margin: 30px auto 0 auto;
+    }
+}
+
+.back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $light_blue;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+h4.circle-text {
+    color: $whitish;
+    width: 100%;
+    text-align: center;
+}
+
+h4.circle-text, img.image_mount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+//both circles included 
+
+.circle_container {
+    @include tablet {
+        width: 100%;
+    }
+}
+
+//rotating project cirles end here
+
+
+h3.projects {
+    @include heading(right, $right:0);
+}
+
+p.projects{
+    @include p_tag(left);
+}

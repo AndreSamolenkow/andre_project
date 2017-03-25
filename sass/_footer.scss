@@ -1,0 +1,59 @@
+//FOOTER
+
+footer {
+    position: relative;
+    background: $light_blue;
+    width: 100%;
+    height: 107px;
+}
+
+.btn-up {
+    position: absolute;
+    top: 21px;
+    right: 400px;
+    transform: translate(0 , -96%);
+    background: $dark_blue;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    z-index: 4;
+    cursor: pointer;
+    .fa {
+        color: $whitish;
+        position: absolute;
+        font-size: 2.3em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+}
+
+
+.logo-ft {
+    @include logo($right: 42px);
+    top: 50%;
+    transform: translate(0%, -50%);
+    display: inline-block;
+    
+}
+
+.social-ft ul {
+    @include social_icons($whitish, $left: 42px);
+     top: 50%;
+     transform: translate(0%, -50%);
+     display: inline-block;
+}
+
+ small {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    color: $whitish;
+    font-size: 1.10rem;;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin: 0 0 0 200px;
+    letter-spacing: 1.04px;
+    }
+
+

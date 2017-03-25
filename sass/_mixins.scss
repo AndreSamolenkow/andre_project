@@ -1,0 +1,116 @@
+//MOBILE QUERIES
+
+@mixin smartphone {
+    @media (max-width: 414px){
+        @content;
+    }
+}
+
+//TABLET QUERIES
+
+@mixin tablet {
+    @media (max-width: 768px){
+        @content;
+    }
+}
+
+
+//HEADING LINE
+
+@mixin heading($positioning, $right: null, $left: null) {
+    color: $dark_blue;
+    text-align: $positioning;
+    font-size: 2rem;
+    letter-spacing: 2.71px;
+    text-transform: uppercase;
+    width: 100%;
+    &:after {
+        content: '';
+        display: block;
+        background: $light_blue;
+        width: 53px;
+        height: 7px;
+        position: absolute;
+        right: $right;
+        left: $left;
+        margin: 35px 15px 35px 15px;
+        }
+    @include tablet {
+        text-align: center;
+        &:after {
+            content: '';
+            display: block;
+            background: $light_blue;
+            width: 53px;
+            height: 7px;
+            position: relative;
+            margin: 30px auto 30px auto;
+            right: initial;
+            left: initial;
+            }
+    }
+}
+
+//LOGO 
+@mixin logo($top: null, $left: null, $right: null) {
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    z-index: 2;
+    top: $top;
+    left: $left;
+    right: $right;
+    @include smartphone {
+        left: 11px;
+    }
+}
+
+//SOCIAL ICONS
+@mixin social_icons ($color, $right: null, $left: null, $bottom: null) {
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+        li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+            i {
+                color: $color;
+            }
+                a {
+                    position: relative;
+                    top: 0;
+                    margin: 0;
+                    font-size: 1.3em;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        top: -5px;
+                    }
+                }
+}
+
+
+//P TAG
+@mixin p_tag($text_align) {
+    text-align: $text_align;
+}
+
+
+//CHART
+
+@mixin level_prop($width){
+  width: $width;
+  animation: bar_anim 2s ease-in 2s;
+}
+
+//LINK 
+@mixin link {
+    color: $dark_blue;
+    transition: all .5s ease-in-out;
+    &:hover {
+        color: $light_blue;
+    }
+}

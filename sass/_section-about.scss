@@ -1,0 +1,31 @@
+//SECTION ABOUT
+
+section {
+    margin: 196px 0 196px 0;
+    position: relative;
+    @include smartphone {
+        margin: 95px 0 95px 0;
+    }
+}
+
+h3.about {
+    @include heading(right, $right: 0);
+}
+
+p.about{
+    @include p_tag(left);
+}
+
+
+img.section_img {
+    margin: 70px 0 0 0;
+    width: 142px;
+    height: auto;
+    @include tablet {
+        position: relative;
+        display: block;
+        margin: 0 auto 30px auto;
+        width: 104px;
+        height: auto;
+    }
+}
