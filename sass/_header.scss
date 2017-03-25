@@ -23,7 +23,7 @@ body {
     @include smartphone {
         top: 0;
         left: 0;
-        background: url(/img/mobile_bg.svg) no-repeat;
+        background: url("../img/mobile_bg.svg") no-repeat center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -56,15 +56,14 @@ body {
     -moz-box-shadow: 10px 19px 33px 0px rgba(0,0,0,0.60);
     box-shadow: 10px 19px 33px 0px rgba(0,0,0,0.60);
     @include smartphone {
-        background: url('/img/andre_mob.jpg') no-repeat -140px 0px;
+        background: url("../img/andre_mob.jpg") no-repeat -140px 0px;
         height: 138px;
         width: 138px;
         border-radius: 50%;
-        z-index: 1100;
+        z-index: 1200;
         top: 90%;
         left: 50%;
         transform: translate(-50%, -90%);
-        margin: 0 auto;
     }
         img {
             padding: 0;
