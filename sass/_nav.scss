@@ -26,11 +26,11 @@
 .ham-menu {
     position: absolute;
     z-index: 1100;
-    bottom: -58px;
+    bottom: -64px;
     right: 42px;
     cursor: pointer;
     @include smartphone {
-        right: 11px;
+        right: 10%;
     }
 }
 
@@ -45,6 +45,9 @@
     height: 2px;
     margin-bottom: 8px;
     transition: all .5s ease-in-out;
+    @include smartphone {
+        background: $whitish;
+    }
     &:last-child {
         width: 27px;
         float: right;

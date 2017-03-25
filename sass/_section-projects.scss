@@ -12,7 +12,7 @@
     position: relative;
     height: 300px;
     width: 300px;
-    margin: 63px 0 0 0;
+    margin: 60px 0 0 0;
     cursor: pointer;
     transition: all .5s ease-in-out;
     -webkit-transform-style: preserve-3d;
@@ -22,7 +22,7 @@
         transform: rotateY(180deg);
     }
     @include tablet {
-        margin: 30px auto 0 auto;
+        margin: 35px auto 0 auto;
     }
 }
 

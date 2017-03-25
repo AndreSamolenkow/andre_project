@@ -4,7 +4,14 @@ footer {
     position: relative;
     background: $light_blue;
     width: 100%;
-    height: 107px;    
+    height: 107px;
+    .container {
+        display: flex;
+        flex-direction: row;
+        @include smartphone {
+            flex-direction: column;
+        }
+    }
 }
 
 .btn-up {
@@ -41,13 +48,13 @@ footer {
     transform: translate(0%, -50%);
     display: inline-block;
     @include smartphone {
-        @include logo($right: 0px);
+        @include logo($right: 5%);
     }
     
 }
 
 .social-ft ul {
-    @include social_icons($whitish, $left: 42px);
+    @include social_icons($whitish, $left: 5%);
      top: 50%;
      transform: translate(0%, -50%);
      display: inline-block;
@@ -62,7 +69,7 @@ footer {
     font-size: 1.10rem;;
     top: 50%;
     transform: translate(0%, -50%);
-    margin: 0 0 0 200px;
+    left: 20%;
     letter-spacing: 1.04px;
     }
 
