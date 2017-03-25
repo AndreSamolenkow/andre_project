@@ -23,7 +23,8 @@ body {
     @include smartphone {
         top: 0;
         left: 0;
-        background: url("../img/mobile_bg.svg") no-repeat center;
+        height: 100vh;
+        background: url("../img/mobile_bg.svg") no-repeat center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
