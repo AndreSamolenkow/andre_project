@@ -21,14 +21,9 @@ body {
     height: 100vh;
     z-index: 1;
     @include smartphone {
-        top: 0;
-        left: 0;
+        height: 100vh;
         --webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-//        -webkit-background-size: cover;
-//        -moz-background-size: cover;
-//        -o-background-size: cover;
-//        background-size: cover;
     }
 }
 
