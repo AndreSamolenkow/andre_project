@@ -21,7 +21,7 @@ body {
     height: 100vh;
     z-index: 1;
     @include smartphone {
-        background: url('/img/mobile_bg.svg') center -40px no-repeat;
+        background: url('img/mobile_bg.svg') center -40px no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -54,7 +54,7 @@ body {
     -moz-box-shadow: 10px 19px 33px 0px rgba(0,0,0,0.60);
     box-shadow: 10px 19px 33px 0px rgba(0,0,0,0.60);
     @include smartphone {
-        background: url('/img/andre_mob.jpg') -140px 0px no-repeat;
+        background: url('img/andre_mob.jpg') -140px 0px no-repeat;
         height: 138px;
         width: 138px;
         border-radius: 50%;
