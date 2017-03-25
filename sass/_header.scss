@@ -27,6 +27,9 @@ body {
 
 .logo {
     @include logo($top: 28px, $left: 42px);
+    @include smartphone {
+        left: 11px;
+    }
     }
 
 

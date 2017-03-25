@@ -3,10 +3,17 @@
 section {
     margin: 196px 0 196px 0;
     position: relative;
-    @include smartphone {
-        margin: 95px 0 95px 0;
+    @include tablet {
+        margin: 95px auto 95px auto;
     }
 }
+
+.container {
+    @include tablet {
+        width: 90%;
+    }
+}
+
 
 h3.about {
     @include heading(right, $right: 0);

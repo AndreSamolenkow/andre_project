@@ -60,9 +60,6 @@
     top: $top;
     left: $left;
     right: $right;
-    @include smartphone {
-        left: 11px;
-    }
 }
 
 //SOCIAL ICONS
