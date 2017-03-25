@@ -17,9 +17,21 @@ h1 {
     transform: translate(-50% , -50%);
     z-index: 3;
     @include smartphone {
-        top: 40%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50% , -40%);
+        transform: translate(-50% , -50%);
+        &:after {
+            content: '';
+            display: block;
+            background: url("../img/andre_mob.jpg") no-repeat -140px 0;
+            height: 128px;
+            width: 128px;
+            border-radius: 50%;
+            z-index: 1200;
+            top: -50%;
+            transform: translate(0, 50%);
+            margin: 0 auto;
+        }
     }
 }
 
