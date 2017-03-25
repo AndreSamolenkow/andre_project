@@ -22,8 +22,8 @@ body {
     z-index: 1;
     @include smartphone {
         height: 100vh;
-        --webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+        --webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 90%);
     }
 }
 
@@ -58,8 +58,8 @@ body {
         border-radius: 50%;
         z-index: 1200;
         left: 50%;
-        bottom: -130%;
-        transform: translate(-50%, 130%);
+        bottom: -90%;
+        transform: translate(-50%, 90%);
     }
         img {
             padding: 0;
