@@ -24,6 +24,7 @@ body {
         height: 100vh;
         --webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 90%);
+        box-sizing: border-box;
     }
 }
 

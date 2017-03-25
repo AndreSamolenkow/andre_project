@@ -15,6 +15,11 @@ h1 {
     left: 50%;
     transform: translate(-50% , -50%);
     z-index: 3;
+    @include smartphone {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50% , -40%);
+    }
 }
 
 //header text remove padding
