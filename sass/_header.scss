@@ -21,7 +21,6 @@ body {
     height: 100vh;
     z-index: 1;
     @include smartphone {
-        height: 100vh;
         top: 0;
         left: 0;
         --webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
