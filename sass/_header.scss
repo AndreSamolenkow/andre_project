@@ -62,9 +62,9 @@ body {
         width: 128px;
         border-radius: 50%;
         z-index: 1200;
-        top: 90%;
         left: 50%;
-        transform: translate(-50%, -90%);
+        bottom: -130%;
+        transform: translate(-50%, 130%);
     }
         img {
             padding: 0;
