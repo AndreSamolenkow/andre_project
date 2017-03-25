@@ -15,8 +15,6 @@ h1 {
     left: 50%;
     transform: translate(-50% , -50%);
     z-index: 3;
-    @include smartphone {
-    }
 }
 
 //header text remove padding
@@ -28,6 +26,9 @@ h1 {
 }
 
 .header-text h1 {
+    @include smartphone {
+        margin-right: 5%;
+    }
     &:after {
         content: '';
         display: block;
@@ -50,6 +51,9 @@ h1 {
     text-align: right;
     letter-spacing: 2.26px;
     padding-top: 25px;
+    @include smartphone {
+        margin-right: 5%;
+    }
 }
 
 h3 {
