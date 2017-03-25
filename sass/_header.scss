@@ -23,11 +23,12 @@ body {
     @include smartphone {
         top: 0;
         left: 0;
-        background: url("../img/bg_lower-01.svg") no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 56%, 0% 100%);
+//        -webkit-background-size: cover;
+//        -moz-background-size: cover;
+//        -o-background-size: cover;
+//        background-size: cover;
     }
 }
 
