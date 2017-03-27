@@ -71,7 +71,7 @@
 }
 
 //Navigation: links
-ul {
+.navigation ul {
     padding: 0;
     li a {
         font-family: 'Open Sans', sans-serif;
@@ -86,10 +86,16 @@ ul {
         text-decoration: none;
         color: $whitish;
         width: 100%;
-        margin-bottom: 1rem;
+        padding: .5em 0 .5em;
         transition: all .5s ease-in-out;
-        &:link, &:visited, &:hover {
-            color: darken($whitish, 20%);
+        &:visited {
+            color: $whitish;
+            background: darken($dark_blue, 1%);
+            text-decoration: none;
+        }
+        &:hover {
+            color: $whitish;
+            background: darken($dark_blue, 1%);
             text-decoration: none;
         }
     }
