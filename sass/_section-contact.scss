@@ -9,7 +9,8 @@ h3.contact {
 }
 
 h5.email a {
-    margin-top: 35px;
+    position: absolute;
+    margin-top: 25px;
     text-align: left;
     @include link;
 
