@@ -109,7 +109,7 @@
 
 @mixin level_prop($width){
   width: $width;
-  animation: bar_anim 2s ease-in 2s;
+  animation: bar_anim 2.5s ease-in-out;
 }
 
 //LINK 
