@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="header">
 <!--           navigation starts here          -->
                 <div class="nav">
                    <div class="ham-menu">
@@ -25,10 +25,10 @@
                    </div>
                    <div class="navigation">
                        <ul>
-                         <li><a href="#">Обо мне</a></li>
-                         <li><a href="#">Навыки</a></li>
-                         <li><a href="#">Проекты</a></li>
-                         <li><a href="#">Связаться</a></li>
+                         <li><a href="#about">Обо мне</a></li>
+                         <li><a href="#skills">Навыки</a></li>
+                         <li><a href="#projects">Проекты</a></li>
+                         <li><a href="#contact">Связаться</a></li>
                        </ul>
                      </div>
                     </div> 
@@ -40,9 +40,9 @@
           <div class="row">
               <div class="col-md-7 col-sm-7 col-xs-12 remove_pad">
                    <div class="top-rect">
-                       <div class="btn-down hidden-xs">
+                       <a href="#about"><div class="btn-down hidden-xs">
                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                       </div>
+                           </div></a>
                        
                    </div>  
                 </div>
@@ -79,7 +79,7 @@
     <!--     TOP PART ENDS HERE   -->
     
 <!--    SECTION ABOUT STARTS HERE-->
-        <section>
+        <section id="about">
            <div class="container">
                <div class="row">
                    <div class="col-md-4">
@@ -97,7 +97,7 @@
  <!--    SECTION ABOUT ENDS HERE--> 
    
  <!--    SECTION SKILLS STARTS HERE-->    
-         <section>
+         <section id="skills">
              <div class="container">
                  <div class="row">
                      <div class="col-md-4 hidden-sm hidden-xs">
@@ -191,7 +191,7 @@
  <!--    SECTION SKILLS ENDS HERE-->
     
  <!--    SECTION PROJECTS STARTS HERE-->
-         <section>
+         <section id="projects">
              <div class="container">
                  <div class="row">
                      <div class="col-md-8 col-sm-12">
@@ -240,7 +240,7 @@
  <!--    SECTION PROJECTS ENDS HERE-->
  
  <!--    SECTION CONTACT STARTS HERE-->
-         <section>
+         <section id="contact">
              <div class="container">
                  <div class="row">
                     <div class="col-md-4">
@@ -263,9 +263,9 @@
    
 <!--    FOOTER-->
         <footer>
-            <div class="btn-up hidden-xs">
+            <a href="#header"><div class="btn-up hidden-xs">
                            <i class="fa fa-angle-up" aria-hidden="true"></i>
-                       </div>
+                </div></a>
                        <div class="container">
                                <img src="img/logo.svg" alt="logo" class="logo-ft">
                 <div class="social-ft">

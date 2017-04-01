@@ -1,8 +1,14 @@
 // HEADER 
 
 //image animation
+
+@include tablet_anim {
+    @media (min-width: 768px){
+    
+ 
+
 .image-andre img {
-    animation: zoom-in 40s ease-in-out 2s infinite alternate;
+    animation: zoom-in 50s ease-in-out 2s infinite alternate;
 }
 
 @keyframes zoom-in {
@@ -26,3 +32,166 @@
 }
 //chart anim ends here
 
+//animate rectangle
+
+.top-rect {
+    animation: rectangle_anim 3.5s ease-in;
+    
+    @keyframes rectangle_anim {
+        0% {
+            left: -99%;
+            top: -100vh;
+        }
+        
+        50% {
+            left: -99%;
+            top: 0;
+        }
+        
+        70% {
+            left: -99%;
+            top: 0;
+        }
+        
+        100% {
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+
+//animate upper button
+
+.btn-down {
+    animation: btn_down_anim 5s ease-in;
+}
+
+@keyframes btn_down_anim {
+    0% {
+        opacity: 0;
+        transform: translate(0 , -96%) rotateY(90deg);
+        
+    }
+    
+    89% {
+        opacity: 0;
+        top: 96%;
+        transform: translate(0 , -96%) rotateY(90deg);
+    }
+    
+    90% {
+        opacity: 0;
+        top: 96%;
+        transform: translate(0 , -96%) rotateY(90deg);
+        
+    }
+    
+    91% {
+        opacity: 1;
+        top: 96%;
+        transform: translate(0 , -96%) rotateY(90deg);
+        
+    }
+    
+    
+    
+    100% {
+        opacity: 1;
+        top: 96%;
+        transform: translate(0 , -96%) rotateY(0deg);
+        
+    }
+}
+
+//animate img-andre 
+
+.image-andre {
+    animation: img_andre_anim 5s ease-in-out;
+}
+
+@keyframes img_andre_anim {
+    0% {
+        transform: translate(-100% , -50%);
+        opacity: 0;
+    }
+    
+    70% {
+        transform: translate(-100% , -50%);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translate(0 , -50%);
+        opacity: 1;
+    }
+}
+
+
+//animate header text 
+
+.header-text {
+    animation: header_text_anim 5s ease-in-out;
+}
+
+@keyframes header_text_anim {
+    0% {
+        opacity: 0;
+        top: -50%;
+    }
+    
+    80% {
+        opacity: 0;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+    
+    100% {
+        opacity: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+}
+
+//logo, hamburger, social icons animation
+
+.logo, .social, .ham-menu {
+    animation: logo_social_nav_anim 5.5s ease-in-out;
+}
+
+@keyframes logo_social_nav_anim {
+    0% {
+        opacity: 0;
+    }
+    
+    90% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: body_overflow_anim 5.5s ease-in-out;
+}
+
+@keyframes body_overflow_anim {
+    0% {
+        overflow: hidden;
+    }
+    
+    99% {
+        overflow: hidden;
+    }
+    
+    100% {
+        overflow: visible;
+    }
+}
+        
+           }
+}
