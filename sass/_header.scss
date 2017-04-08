@@ -1,3 +1,5 @@
+//HEADER
+
 body {
     background: $whitish;
 }
@@ -22,7 +24,8 @@ body {
     z-index: 1;
     @include smartphone {
         height: 100vh;
-        --webkit-clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
+        -moz-clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 55%, 0% 90%);
         box-sizing: border-box;
     }

@@ -11,16 +11,16 @@ $(document).ready(function(){
 
 //remove open nav if scrolled further down
 
-$(window).scroll(function() {    
-    var scroll = $(window).scrollTop(),
-        wrapper = $('.wrapper'),
-        button = $('.ham-menu');
-    if (scroll >= 400) {
-        wrapper.removeClass("open_nav");
-        button.removeClass("open");
-        
-    }
-});
+//$(window).scroll(function() {    
+//    var scroll = $(window).scrollTop(),
+//        wrapper = $('.wrapper'),
+//        button = $('.ham-menu');
+//    if (scroll >= 400) {
+//        wrapper.removeClass("open_nav");
+//        button.removeClass("open");
+//        
+//    }
+//});
 
 
 //Smooth scrolling
