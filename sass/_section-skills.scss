@@ -21,6 +21,10 @@ p.skills{
   @include level_prop(20%);
 }
 
+.level_30{
+  @include level_prop(30%);
+}
+
 .level_40{
   @include level_prop(40%);
 }
